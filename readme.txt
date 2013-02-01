@@ -5,7 +5,7 @@ http://www.indaam.com/projects/css/neo-download-button
 
 The CSS download buttons purly with CSS
 
-Copyleft 2012 Irham Kendeni.
+Public Domain & Copyleft 2012 Irham Kendeni.
 Released on http://www.indaam.com/
 
 ***
