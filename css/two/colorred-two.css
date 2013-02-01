@@ -1,0 +1,232 @@
+/*
+
+Project Name :  Neo CSS Download Button Two(red-two)
+Version :  1.0
+Author :  Indaam || Indam || Irham Kendeni. Is same.
+Author Url :  http: //www.indaam.com
+Check for Update &amp;
+	 report bugs:  http: //www.indaam.com/projects/css/neo-download-button
+Inspirated by :  http: //www.designrshub.com/2011/11/35-free-vector-download-button-psd-for.html
+Check for Update & report bugs:  http: //www.indaam.com/projects/css/neo-download-button
+CSS license :  Copyleft, Public domain (free for all and free for commerical projects)
+
+copyleft :  http: //en.wikipedia.org/wiki/Copyleft
+Public domain :  http: //en.wikipedia.org/wiki/Public_domain
+
+Changelog
+v1.0 2012-01-06 (Release)
+v1.1 2012-03-10
+* Edit core
+
+How to Usage?
+Add this style, and using tag A than set the value of atribut class;
+	For sample;
+	one :  <a class='neo-download-two-red-two' href='#1'>download</a>
+	two :  <a class='neo-download-two-red-two style-two' href='#1'>download</a>*/
+/* Framework */
+.neo-download-two-red-two{
+	outline: none;
+	border: none;
+	display:block;
+	margin: 0;
+	overflow:hidden;
+	text-decoration: none;
+	padding: 19px 15px 17px;
+	text-align: center;
+	text-transform: uppercase;
+	font: normal bold 18px/17px Helvetica, Arial, sans-serif;
+	float: left;
+	/* border-radius */
+-ms-border-radius: 55px;
+	-webkit-border-radius: 55px;
+	-moz-border-radius: 55px;
+	border-radius: 55px;
+	/* End border-radius */
+
+	}
+
+.neo-download-two-red-two:before,/* line 1px top */
+.neo-download-two-red-two:after{
+	/* line 1px bottom */
+position: relative;
+	content: '';
+	height: 1px;
+	display:block;
+	margin: 0 auto
+	}
+
+.neo-download-two-red-two:before{
+	/* line 1px top */
+width: 90%;
+	opacity: 0.6;
+	top: -19px
+	}
+
+.neo-download-two-red-two:after{
+	/* line 1px bottom */
+opacity: 0.2;
+	top: 17px
+	}
+
+.neo-download-two-red-two:hover{
+	cursor:  pointer
+	}
+
+.neo-download-two-red-two:hover:after{
+	opacity: 0.4
+	}
+
+.neo-download-two-red-two:hover:before{
+	opacity: 0.8
+	}
+
+.neo-download-two-red-two:focus,
+.neo-download-two-red-two:active{
+	outline: none;
+	position: relative;
+	top: 3px
+	}
+
+.neo-download-two-red-two:focus:before,
+.neo-download-two-red-two:active:before,
+.neo-download-two-red-two:focus:after,
+.neo-download-two-red-two:active:after{
+	opacity: 0.2
+	}
+
+/* style-two */
+.style-two{
+	line-height: 5px;
+	font-size:  16px;
+	/* border-radius */
+border-radius: 14px 14px 17px 17px;
+	-webkit-border-radius: 14px 14px 17px 17px;
+	-moz-border-radius: 14px 14px 17px 17px;
+	-ms-border-radius: 14px 14px 17px 17px;
+	/* End border-radius */
+padding: 0 17px 19px 17px
+	}
+
+.style-two:before{
+	/* rounded top */
+top: 0;
+	width: 116%;
+	left: -8%;
+	padding: 8px 0;
+	border-radius: 7px 7px 13px 13px;
+	-moz-border-radius: 7px 7px 13px 13px;
+	-webkit-border-radius: 7px 7px 13px 13px;
+	-ms-border-radius: 7px 7px 13px 13px;
+	background: rgba(255, 255, 255, 0.8)!important;
+	background:  radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -moz-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -webkit-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -o-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important
+	}
+
+.style-two:after{
+	/* line 1px bottom */
+top: 19px
+	}
+
+/* End style-two */
+/* End Framework */
+/* Set Color */
+.neo-download-two-red-two{
+	color: #EFE0E0;
+	/* text shadow */
+text-shadow: 0 2px 1px #6F0000;
+	-moz-text-shadow: 0 2px 1px #6F0000;
+	-webkit-text-shadow: 0 2px 1px #6F0000;
+	-ms-text-shadow: 0 2px 1px #6F0000;
+	/* End text shadow */
+/* background and gradient */
+background: #B74C4C;
+	background:  radial-gradient( 50% -10%, ellipse, #EFD1D1 0%, #B74C4C 70%, #AF3636 100%);
+	background:  -moz-radial-gradient( 50% -10%, ellipse, #EFD1D1 0%, #B74C4C 70%, #AF3636 100%);
+	background:  -webkit-radial-gradient( 50% -10%, ellipse, #EFD1D1 0%, #B74C4C 70%, #AF3636 100%);
+	background:  -o-radial-gradient( 50% -10%, ellipse, #EFD1D1 0%, #B74C4C 70%, #AF3636 100%);
+	background:  -ms-radial-gradient( 50% -10%, ellipse, #EFD1D1 0%, #B74C4C 70%, #AF3636 100%);
+	background-image:  -webkit-gradient(radial,/* Old webkit */
+50% -10%, 0, 90 90, 360, color-stop(0, #EFD1D1), color-stop(20%, #B74C4C), color-stop(100%, #AF3636));
+	/* End background and gradient */
+/* box shadow */
+box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #8F0808, 0 4px 0 #8F0808, 0 5px 0 #6F0000, 0 5px 2px #8F0808, 0 5px 6px #8F0808;
+	-moz-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #8F0808, 0 4px 0 #8F0808, 0 5px 0 #6F0000, 0 5px 2px #8F0808, 0 5px 6px #8F0808;
+	-webkit-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #8F0808, 0 4px 0 #8F0808, 0 5px 0 #6F0000, 0 5px 2px #8F0808, 0 5px 6px #8F0808;
+	-o-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #8F0808, 0 4px 0 #8F0808, 0 5px 0 #6F0000, 0 5px 2px #8F0808, 0 5px 6px #8F0808;
+	-ms-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #8F0808, 0 4px 0 #8F0808, 0 5px 0 #6F0000, 0 5px 2px #8F0808, 0 5px 6px #8F0808;
+	/* End box shadow */
+
+	}
+
+.neo-download-two-red-two:before{
+	/* line 1px top */
+/* background and gradient */
+background: #BF5F5F;
+	/*c1*/
+background:  linear-gradient(left, transparent 0%, #CF8181 20%, #EFD1D1 50%, #CF8181 80%, transparent 100%);
+	background:  -moz-linear-gradient(left, transparent 0%, #CF8181 20%, #EFD1D1 50%, #CF8181 80%, transparent 100%);
+	background:  -webkit-linear-gradient(left, transparent 0%, #CF8181 20%, #EFD1D1 50%, #CF8181 80%, transparent 100%);
+	background:  -o-linear-gradient(left, transparent 0%, #CF8181 20%, #EFD1D1 50%, #CF8181 80%, transparent 100%);
+	background:  -ms-linear-gradient(left, transparent 0%, #CF8181 20%, #EFD1D1 50%, #CF8181 80%, transparent 100%);
+	background: -webkit-gradient( linear, left bottom, right bottom, color-stop(0%, transparent), color-stop(40%, #CF8181), color-stop(50%, #EFD1D1), color-stop(60%, #CF8181), color-stop(100%, transparent));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-red-two:after{
+	/* line 1px bottom */
+/* background and gradient */
+background: #CF8181;
+	background:  linear-gradient(left, transparent 0%, #CF8181 30%, #DFA7A7 50%, #CF8181 70%, transparent 100%);
+	background:  -moz-linear-gradient(left, transparent 0%, #CF8181 30%, #DFA7A7 50%, #CF8181 70%, transparent 100%);
+	background:  -webkit-linear-gradient(left, transparent 0%, #CF8181 30%, #DFA7A7 50%, #CF8181 70%, transparent 100%);
+	background:  -o-linear-gradient(left, transparent 0%, #CF8181 30%, #DFA7A7 50%, #CF8181 70%, transparent 100%);
+	background:  -ms-linear-gradient(left, transparent 0%, #CF8181 30%, #DFA7A7 50%, #CF8181 70%, transparent 100%);
+	background: -webkit-gradient(/* old webkit */
+linear, left bottom, right bottom, color-stop(0%, transparent), color-stop(40%, #CF8181), color-stop(50%, #DFA7A7), color-stop(60%, #CF8181), color-stop(100%, transparent));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-red-two:hover{
+	/* background and gradient */
+background: #AF3636;
+	background:  radial-gradient( 50% -10%, ellipse, #CF8181 0%, #AF3636 70%, #9F1D1D 100%);
+	background:  -moz-radial-gradient( 50% -10%, ellipse, #CF8181 0%, #AF3636 70%, #9F1D1D 100%);
+	background:  -webkit-radial-gradient( 50% -10%, ellipse, #CF8181 0%, #AF3636 70%, #9F1D1D 100%);
+	background:  -o-radial-gradient( 50% -10%, ellipse, #CF8181 0%, #AF3636 70%, #9F1D1D 100%);
+	background:  -ms-radial-gradient( 50% -10%, ellipse, #CF8181 0%, #AF3636 70%, #9F1D1D 100%);
+	background-image:  -webkit-gradient(radial, 50% -10%, 0, 90 90, 360, color-stop(0, #CF8181), color-stop(20%, #AF3636), color-stop(100%, #9F1D1D));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-red-two:focus,
+.neo-download-two-red-two:active{
+	/* text shadow */
+text-shadow:  -1px -1px 0 #6F0000;
+	-moz-text-shadow:  -1px -1px 0 #6F0000;
+	-webkit-text-shadow:  -1px -1px 0 #6F0000;
+	-ms-text-shadow:  -1px -1px 0 #6F0000;
+	/* End text shadow */
+/* box shadow */
+box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #6F0000, 0 3px 2px #8F0808, 0 3px 6px #8F0808;
+	-moz-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #6F0000, 0 3px 2px #8F0808, 0 3px 6px #8F0808;
+	-webkit-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #6F0000, 0 3px 2px #8F0808, 0 3px 6px #8F0808;
+	-ms-box-shadow: 0 -1px 1px rgba(143, 8, 8, 0.4), /* #8F0808 and opacity 40% */
+0 1px 0 #8F0808, 0 2px 0 #8F0808, 0 3px 0 #6F0000, 0 3px 2px #8F0808, 0 3px 6px #8F0808;
+	/* End box shadow */
+
+	}
+
+/* End Set Color */

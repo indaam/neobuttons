@@ -1,0 +1,449 @@
+/*
+Project Name :  Neo CSS Download Button One
+Version :  1.1
+Author :  Indaam || Indam || Irham Kendeni. Is same.
+Author Url :  http: //www.indaam.com
+Inspirated by :  sorry I am forgot, if you know please tell me!
+Check for Update & report bugs:  http: //www.indaam.com/projects/css/neo-download-button
+CSS license :  Copyleft, Public domain (free for all and free for commerical projects)Copyleft :  http: //en.wikipedia.org/wiki/Copyleft
+Public domain :  http: //en.wikipedia.org/wiki/Public_domain
+
+Changelog
+v1.0 2012-01-06 (Release)
+v1.1 2012-02-28
+ * Edit core
+
+How to Use?
+1. Copy All CSS
+2. Set value the tag a with this
+	*  neo-download-one(required)
+	*  bluestyle or greenstyle(required/select one)
+	*  noribbon(optional)
+	*  noarrow(optional)
+	*  ribbonother, ribbonzip, ribbonpsd, ribbonbuy, ribbonbeta, ribbonnew(optional, if dont using noribbon)
+	For sample;
+		<a class='neo-download-one greenstyle' href='#1'>
+			<span class='style'>download</span>
+			<span class='arrow'>&nbsp;</span>
+		</a>
+<!-- # -->
+		<a class='neo-download-one bluestyle' href='#1'>
+			<span class='style'>download</span>
+			<span class='arrow'>&nbsp;</span>
+		</a>
+<!-- # -->
+		<a class='neo-download-one bluestyle noribbon noarrow' href='#1'>
+			<span class='style'>download</span>
+			<span class='arrow'>&nbsp;</span>
+		</a>
+*/
+/* Framework */
+.neo-download-one{
+	text-transform:  capitalize;
+	font:  bold 34px arial, helvetica, sans-serif;
+	float:  left;
+	padding:  4px 4px 0 4px;
+	overflow:  hidden
+	}
+
+.neo-download-one:link,
+.neo-download-one:visited{
+	text-decoration:  none;
+	color:  #fff
+	}
+
+.neo-download-one:focus{
+	outline:  none
+	}
+
+.neo-download-one span.style{
+	/* text-indent:  -14px;
+	 bug on opera */
+/* float:  left;
+	 */
+text-align:  left;
+	padding:  15px 60px 15px 0;
+	/* min :  padding-top & bottom 15px */
+display:  block;
+	/*  border radius */
+border-radius:  15px;
+	-moz-border-radius:  15px;
+	-ms-border-radius:  15px;
+	-webkit-border-radius:  15px;
+	/*  end border radius */
+position:  relative;
+	z-index:  2
+	}
+
+.neo-download-one span.style:before{
+	/* ribbon */
+text-indent:  0;
+	text-shadow:  none;
+	margin:  -5px 0 0 -33px;
+	float:  left;
+	content:  'free';
+	/* you can change content value */
+text-align:  center;
+	padding:  3px 0 3px 0;
+	font-size:  12px;
+	letter-spacing:  2px;
+	text-transform:  uppercase;
+	display:  block;
+	width:  100px;
+	/* rotate */
+transform:  rotate(-45deg);
+	-moz-transform:  rotate(-45deg);
+	-ms-transform:  rotate(-45deg);
+	-o-transform:  rotate(-45deg);
+	-webkit-transform:  rotate(-45deg);
+	/* end rotate */
+
+	}
+
+.neo-download-one:after{
+	/* ribbon shadow */
+margin:  -48px 0 0 -15px;
+	width:  88px;
+	height:  8px;
+	float:  left;
+	clear:  both;
+	content:  '';
+	/* rotate */
+transform:  rotate(-45deg);
+	-moz-transform:  rotate(-45deg);
+	-ms-transform:  rotate(-45deg);
+	-o-transform:  rotate(-45deg);
+	-webkit-transform:  rotate(-45deg);
+	/* end rotate */
+/* border radius */
+border-radius:  0 5px 0 5px;
+	-webkit-border-radius:  0 5px 0 5px;
+	-moz-border-radius:  0 5px 0 5px;
+	-ms-border-radius:  0 5px 0 5px;
+	/* end border radius */
+position:  relative;
+	z-index:  1
+	}
+
+.neo-download-one span.arrow{
+	/* arrow */
+display:  block;
+	float:  right;
+	width:  0;
+	height:  0;
+	clear:  both;
+	margin:  -56px 40px 0 0;
+	/* display: none;
+	 if you remove arrow delete this comment */
+
+	}
+
+.neo-download-one span.arrow:before{
+	content:  '';
+	clear:  both;
+	display:  block;
+	width:  20px;
+	height:  20px;
+	/* border radius */
+border-radius:  2px 2px 0 0;
+	-webkit-border-radius:  2px 2px 0 0;
+	-ms-border-radius:  2px 2px 0 0;
+	webkit-border-radius:  2px 2px 0 0;
+	/* end border radius */
+position:  relative;
+	z-index:  3
+	}
+
+.neo-download-one span.arrow:after{
+	/* arrow triangel */
+position:  relative;
+	z-index:  2;
+	content:  '';
+	width:  0;
+	height:  0;
+	float:  left;
+	border-style:  solid;
+	border-width:  18px 18px 18px 18px;
+	margin:  -41px 0 0 -8px
+	}
+
+.neo-download-one:focus span.arrow{
+	/* arrow active and focus */
+margin-top:  -54px
+	}
+
+.small{
+	font-size: 20px;
+	padding:  2px 2px 0 2px
+	}
+
+.small span.style{
+	padding:  8px 30px 8px 0;
+	/* min :  padding-top & bottom 15px */
+/*  border radius */
+border-radius:  7px;
+	-moz-border-radius:  7px;
+	-ms-border-radius:  7px;
+	-webkit-border-radius:  7px;
+	/*  end border radius */
+
+	}
+
+.small span.style:before{
+	/* ribbon */
+margin:  -2px 0 0 -16px;
+	padding:  1px 0 1px 0;
+	font-size:  7px;
+	letter-spacing:  1px;
+	width:  50px
+	}
+
+.small:after{
+	/* ribbon shadow */
+margin:  -29px 0 0 -9px;
+	width:  49px;
+	height:  4px;
+	/* border radius */
+border-radius:  0 2px 0 2px;
+	-webkit-border-radius:  0 2px 0 2px;
+	-moz-border-radius:  0 2px 0 2px;
+	-ms-border-radius:  0 2px 0 2px;
+	/* end border radius */
+
+	}
+
+.small span.arrow{
+	/* arrow */
+margin:  -30px 20px 0 0;
+	/* display: none;
+	 if you remove arrow delete this comment */
+
+	}
+
+.small:active span.arrow,
+.small:focus span.arrow{
+	/* arrow active and focus */
+margin-top:  -27px
+	}
+
+.small span.arrow:before{
+	width:  10px;
+	height:  10px;
+	/* border radius */
+border-radius:  1px 1px 0 0;
+	-webkit-border-radius:  1px 1px 0 0;
+	-ms-border-radius:  1px 1px 0 0;
+	webkit-border-radius:  1px 1px 0 0;
+	/* end border radius */
+
+	}
+
+.small span.arrow:after{
+	/* arrow triangel */
+border-width:  9px 9px 9px 9px;
+	margin:  -25px 0 0 -4px
+	}
+
+.noribbon:after,
+.noribbon span.style:before,/* noribbon | hide ribbon */
+.noarrow span.arrow{
+	/* noarrow | hide arrow */
+display:  none
+	}
+
+.noribbon span.style{
+	padding-left: 20px;
+	text-indent: 3%
+	}
+
+/* End Framework */
+/* Set color */
+/* bluestyle */
+.bluestyle span.style{
+	border:  1px solid #249bd4;
+	/* background and gradient  */
+background:  #4fafdc;
+	background:  linear-gradient( top, #4fafdc 0%, #36b4f1 50%, #2385b2 100%);
+	background:  -ms-linear-gradient( top, #4fafdc 0%, #36b4f1 50%, #2385b2 100%);
+	background:  -moz-linear-gradient( top, #4fafdc 0%, #36b4f1 50%, #2385b2 100%);
+	background:  -o-linear-gradient( top, #4fafdc 0%, #36b4f1 50%, #2385b2 100%);
+	background:  -webkit-linear-gradient( top, #4fafdc 0%, #36b4f1 50%, #2385b2 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left top, left bottom, color-stop(0%, #4fafdc), color-stop(50%, #36b4f1), color-stop(100%, #2385b2));
+	/* end background and gradient  */
+/* text shadow */
+text-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-moz-text-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-ms-text-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-webkit-text-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	/* end text shadow */
+
+	}
+
+.bluestyle span.style:before{
+	/* ribbon */
+/* box shadow */
+box-shadow:  0 1px 2px #7c86c2;
+	-moz-box-shadow:  0 1px 2px #7c86c2;
+	-webkit-box-shadow:  0 1px 2px #7c86c2;
+	-ms-box-shadow:  0 1px 2px #7c86c2;
+	/* end box shadow */
+/* background and gradient */
+background:  #df81c7;
+	background:  linear-gradient( left, #af4994 0%, #df81c7 50%, #af4994 100%);
+	background:  -moz-linear-gradient( left, #af4994 0%, #df81c7 50%, #af4994 100%);
+	background:  -webkit-linear-gradient( left, #af4994 0%, #df81c7 50%, #af4994 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left bottom, right bottom, color-stop(0%, #af4994), color-stop(50%, #df81c7), color-stop(100%, #af4994));
+	background:  -o-linear-gradient( left, #af4994 0%, #df81c7 50%, #af4994 100%);
+	background:  -ms-linear-gradient( left, #af4994 0%, #df81c7 50%, #af4994 100%);
+	/* end background and gradient */
+
+	}
+
+.bluestyle:after{
+	/* ribbon shadow */
+background:  #3c1d4c
+	}
+
+.bluestyle span.arrow:before{
+	/* arrow */
+background:  #fff;
+	/* box shadow */
+box-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-webkit-box-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-moz-box-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	-ms-box-shadow:  0 -1px 0 #247693, -1px 0 0 #247693;
+	/* end box shadow */
+
+	}
+
+.bluestyle span.arrow:after{
+	/* triangel */
+/* box shadow */
+box-shadow:  0 -1px 0 #247693;
+	-webkit-box-shadow:  0 -1px 0 #247693;
+	-moz-box-shadow:  0 -1px 0 #247693;
+	-ms-box-shadow:  0 -1px 0 #247693;
+	/* end box shadow */
+border-color:  #fff transparent transparent
+	}
+
+/* end */
+.bluestyle:active span.style,
+.bluestyle:hover span.style{
+	/* text shadow */
+text-shadow:  0 1px 6px #9dd6f0, 0 -1px 6px #247693, 1px 0 6px #9dd6f0;
+	-moz-text-shadow:  0 1px 6px #9dd6f0, 0 -1px 6px #247693, 1px 0 6px #9dd6f0;
+	-webkit-text-shadow:  0 1px 6px #9dd6f0, 0 -1px 6px #247693, 1px 0 6px #9dd6f0;
+	-ms-text-shadow:  0 1px 6px #9dd6f0, 0 -1px 6px #247693, 1px 0 6px #9dd6f0;
+	/* end text shadow */
+/* background and gradient  */
+background:  #58c8fc;
+	background:  linear-gradient( top, #e2f6ff 0%, #36b4f1 35%, #2385b2 100%);
+	background:  -ms-linear-gradient( top, #e2f6ff 0%, #36b4f1 35%, #2385b2 100%);
+	background:  -moz-linear-gradient( top, #e2f6ff 0%, #36b4f1 35%, #2385b2 100%);
+	background:  -o-linear-gradient( top, #e2f6ff 0%, #36b4f1 35%, #2385b2 100%);
+	background:  -webkit-linear-gradient( top, #e2f6ff 0%, #36b4f1 35%, #2385b2 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left top, left bottom, color-stop(0%, #e2f6ff), color-stop(35%, #36b4f1), color-stop(100%, #2385b2));
+	/* end background and gradient  */
+
+	}
+
+/* End bluestyle */
+/* greenstyle */
+.greenstyle span.style{
+	border:  1px solid #2FCF26;
+	/* background and gradient  */
+background:  #7CEF68;
+	background:  linear-gradient( top, #7CEF68 0%, #77EF3B 50%, #43AF20 100%);
+	background:  -ms-linear-gradient( top, #7CEF68 0%, #77EF3B 50%, #43AF20 100%);
+	background:  -moz-linear-gradient( top, #7CEF68 0%, #77EF3B 50%, #43AF20 100%);
+	background:  -o-linear-gradient( top, #7CEF68 0%, #77EF3B 50%, #43AF20 100%);
+	background:  -webkit-linear-gradient( top, #7CEF68 0%, #77EF3B 50%, #43AF20 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left top, left bottom, color-stop(0%, #7CEF68), color-stop(50%, #77EF3B), color-stop(100%, #43AF20));
+	/* end background and gradient  */
+/* text shadow */
+text-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-moz-text-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-ms-text-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-webkit-text-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	text-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	/* end text shadow */
+
+	}
+
+.greenstyle span.style:before{
+	/* ribbon */
+/* box shadow */
+box-shadow:  0 1px 2px #82BF77 ;
+	-moz-box-shadow:  0 1px 2px #82BF77 ;
+	-webkit-box-shadow:  0 1px 2px #82BF77 ;
+	-ms-box-shadow:  0 1px 2px #82BF77 ;
+	/* end box shadow */
+/* background and gradient */
+background:  #8F98FF;
+	background:  linear-gradient( left, #1928CF 0%, #8F98FF 50%, #1928CF 100%);
+	background:  -moz-linear-gradient( left, #1928CF 0%, #8F98FF 50%, #1928CF 100%);
+	background:  -webkit-linear-gradient( left, #1928CF 0%, #8F98FF 50%, #1928CF 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left bottom, right bottom, color-stop(0%, #1928CF), color-stop(50%, #8F98FF), color-stop(100%, #1928CF));
+	background:  -o-linear-gradient( left, #1928CF 0%, #8F98FF 50%, #1928CF 100%);
+	background:  -ms-linear-gradient( left, #1928CF 0%, #8F98FF 50%, #1928CF 100%);
+	/* end background and gradient */
+
+	}
+
+.greenstyle:after{
+	/* ribbon shadow */
+background:  #000A7F
+	}
+
+.greenstyle span.arrow:before{
+	/* arrow */
+background:  #fff;
+	/* box shadow */
+box-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-webkit-box-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-moz-box-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	-ms-box-shadow:  0 -1px 0 #3D8F23, -1px 0 0 #3D8F23;
+	/* end box shadow */
+
+	}
+
+.greenstyle span.arrow:after{
+	/* triangel */
+/* box shadow */
+box-shadow:  0 -1px 0 #3D8F23;
+	-webkit-box-shadow:  0 -1px 0 #3D8F23;
+	-moz-box-shadow:  0 -1px 0 #3D8F23;
+	-ms-box-shadow:  0 -1px 0 #3D8F23;
+	/* end box shadow */
+border-color:  #fff transparent transparent
+	}
+
+.greenstyle:active span.style,
+.greenstyle:hover span.style{
+	/* text shadow */
+text-shadow:  0 1px 6px #AFEFA4, 0 -1px 6px #3D8F23, 1px 0 6px #AFEFA4;
+	-moz-text-shadow:  0 1px 6px #AFEFA4, 0 -1px 6px #3D8F23, 1px 0 6px #AFEFA4;
+	-webkit-text-shadow:  0 1px 6px #AFEFA4, 0 -1px 6px #3D8F23, 1px 0 6px #AFEFA4;
+	-ms-text-shadow:  0 1px 6px #AFEFA4, 0 -1px 6px #3D8F23, 1px 0 6px #AFEFA4;
+	/* end text shadow */
+/* background and gradient  */
+background:  #58c8fc;
+	background:  linear-gradient( top, #E1FFDF 0%, #77EF3B 35%, #43AF20 100%);
+	background:  -ms-linear-gradient( top, #E1FFDF 0%, #77EF3B 35%, #43AF20 100%);
+	background:  -moz-linear-gradient( top, #E1FFDF 0%, #77EF3B 35%, #43AF20 100%);
+	background:  -o-linear-gradient( top, #E1FFDF 0%, #77EF3B 35%, #43AF20 100%);
+	background:  -webkit-linear-gradient( top, #E1FFDF 0%, #77EF3B 35%, #43AF20 100%);
+	background:  -webkit-gradient(/* old webkit */
+linear, left top, left bottom, color-stop(0%, #E1FFDF), color-stop(35%, #77EF3B), color-stop(100%, #43AF20));
+	/* end background and gradient  */
+
+	}
+
+/* End greenstyle */
+/* End Set color */

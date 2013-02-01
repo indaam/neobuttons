@@ -1,0 +1,234 @@
+/*
+
+Project Name :  Neo CSS Download Button Two(magenta-two)
+Version :  1.0
+Author :  Indaam || Indam || Irham Kendeni. Is same.
+Author Url :  http: //www.indaam.com
+Check for Update &amp;
+	 report bugs:  http: //www.indaam.com/projects/css/neo-download-button
+Inspirated by :  http: //www.designrshub.com/2011/11/35-free-vector-download-button-psd-for.html
+Check for Update & report bugs:  http: //www.indaam.com/projects/css/neo-download-button
+CSS license :  Copyleft, Public domain (free for all and free for commerical projects)
+
+copyleft :  http: //en.wikipedia.org/wiki/Copyleft
+Public domain :  http: //en.wikipedia.org/wiki/Public_domain
+
+Changelog
+v1.0 2012-01-06 (Release)
+v1.1 2012-03-10
+* Edit core
+
+How to Usage?
+Add this style, and using tag A than set the value of atribut class;
+	
+For sample;
+	one :  <a class='neo-download-two-magenta-two' href='#1'>download</a>
+	two :  <a class='neo-download-two-magenta-two style-two' href='#1'>download</a>*/
+
+
+/* Framework */
+.neo-download-two-magenta-two{
+	outline: none;
+	border: none;
+	display:block;
+	margin: 0;
+	overflow:hidden;
+	text-decoration: none;
+	padding: 19px 15px 17px;
+	text-align: center;
+	text-transform: uppercase;
+	font: normal bold 18px/17px Helvetica, Arial, sans-serif;
+	float: left;
+	/* border-radius */
+-ms-border-radius: 55px;
+	-webkit-border-radius: 55px;
+	-moz-border-radius: 55px;
+	border-radius: 55px;
+	/* End border-radius */
+
+	}
+
+.neo-download-two-magenta-two:before,/* line 1px top */
+.neo-download-two-magenta-two:after{
+	/* line 1px bottom */
+position: relative;
+	content: '';
+	height: 1px;
+	display:block;
+	margin: 0 auto
+	}
+
+.neo-download-two-magenta-two:before{
+	/* line 1px top */
+width: 90%;
+	opacity: 0.6;
+	top: -19px
+	}
+
+.neo-download-two-magenta-two:after{
+	/* line 1px bottom */
+opacity: 0.2;
+	top: 17px
+	}
+
+.neo-download-two-magenta-two:hover{
+	cursor:  pointer
+	}
+
+.neo-download-two-magenta-two:hover:after{
+	opacity: 0.4
+	}
+
+.neo-download-two-magenta-two:hover:before{
+	opacity: 0.8
+	}
+
+.neo-download-two-magenta-two:focus,
+.neo-download-two-magenta-two:active{
+	outline: none;
+	position: relative;
+	top: 3px
+	}
+
+.neo-download-two-magenta-two:focus:before,
+.neo-download-two-magenta-two:active:before,
+.neo-download-two-magenta-two:focus:after,
+.neo-download-two-magenta-two:active:after{
+	opacity: 0.2
+	}
+
+/* style-two */
+.style-two{
+	line-height: 5px;
+	font-size:  16px;
+	/* border-radius */
+border-radius: 14px 14px 17px 17px;
+	-webkit-border-radius: 14px 14px 17px 17px;
+	-moz-border-radius: 14px 14px 17px 17px;
+	-ms-border-radius: 14px 14px 17px 17px;
+	/* End border-radius */
+padding: 0 17px 19px 17px
+	}
+
+.style-two:before{
+	/* rounded top */
+top: 0;
+	width: 116%;
+	left: -8%;
+	padding: 8px 0;
+	border-radius: 7px 7px 13px 13px;
+	-moz-border-radius: 7px 7px 13px 13px;
+	-webkit-border-radius: 7px 7px 13px 13px;
+	-ms-border-radius: 7px 7px 13px 13px;
+	background: rgba(255, 255, 255, 0.8)!important;
+	background:  radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -moz-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -webkit-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important;
+	background:  -o-radial-gradient( 50% 90%, ellipse, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 1) 100%)!important
+	}
+
+.style-two:after{
+	/* line 1px bottom */
+top: 19px
+	}
+
+/* End style-two */
+/* Set Color */
+.neo-download-two-magenta-two{
+	color: #EDE0EF;
+	/* text shadow */
+text-shadow: 0 2px 1px #38043F;
+	-moz-text-shadow: 0 2px 1px #38043F;
+	-webkit-text-shadow: 0 2px 1px #38043F;
+	-ms-text-shadow: 0 2px 1px #38043F;
+	/* End text shadow */
+/* background and gradient */
+background: #69416E;
+	background:  radial-gradient( 50% -10%, ellipse, #EBD1EF 0%, #69416E 70%, #68306F 100%);
+	background:  -moz-radial-gradient( 50% -10%, ellipse, #EBD1EF 0%, #69416E 70%, #68306F 100%);
+	background:  -webkit-radial-gradient( 50% -10%, ellipse, #EBD1EF 0%, #69416E 70%, #68306F 100%);
+	background:  -o-radial-gradient( 50% -10%, ellipse, #EBD1EF 0%, #69416E 70%, #68306F 100%);
+	background:  -ms-radial-gradient( 50% -10%, ellipse, #EBD1EF 0%, #69416E 70%, #68306F 100%);
+	background-image:  -webkit-gradient(radial,/* Old webkit */
+50% -10%, 0, 90 90, 360, color-stop(0, #EBD1EF), color-stop(20%, #69416E), color-stop(100%, #68306F));
+	/* End background and gradient */
+/* box shadow */
+box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #56125F, 0 4px 0 #56125F, 0 5px 0 #38043F, 0 5px 2px #56125F, 0 5px 6px #56125F;
+	-moz-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #56125F, 0 4px 0 #56125F, 0 5px 0 #38043F, 0 5px 2px #56125F, 0 5px 6px #56125F;
+	-webkit-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #56125F, 0 4px 0 #56125F, 0 5px 0 #38043F, 0 5px 2px #56125F, 0 5px 6px #56125F;
+	-o-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #56125F, 0 4px 0 #56125F, 0 5px 0 #38043F, 0 5px 2px #56125F, 0 5px 6px #56125F;
+	-ms-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #56125F, 0 4px 0 #56125F, 0 5px 0 #38043F, 0 5px 2px #56125F, 0 5px 6px #56125F;
+	/* End box shadow */
+
+	}
+
+.neo-download-two-magenta-two:before{
+	/* line 1px top */
+/* background and gradient */
+background: #89598F;
+	/*c1*/
+background:  linear-gradient(left, transparent 0%, #A878AF 20%, #EBD1EF 50%, #A878AF 80%, transparent 100%);
+	background:  -moz-linear-gradient(left, transparent 0%, #A878AF 20%, #EBD1EF 50%, #A878AF 80%, transparent 100%);
+	background:  -webkit-linear-gradient(left, transparent 0%, #A878AF 20%, #EBD1EF 50%, #A878AF 80%, transparent 100%);
+	background:  -o-linear-gradient(left, transparent 0%, #A878AF 20%, #EBD1EF 50%, #A878AF 80%, transparent 100%);
+	background:  -ms-linear-gradient(left, transparent 0%, #A878AF 20%, #EBD1EF 50%, #A878AF 80%, transparent 100%);
+	background: -webkit-gradient( linear, left bottom, right bottom, color-stop(0%, transparent), color-stop(40%, #A878AF), color-stop(50%, #EBD1EF), color-stop(60%, #A878AF), color-stop(100%, transparent));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-magenta-two:after{
+	/* line 1px bottom */
+/* background and gradient */
+background: #A878AF;
+	background:  linear-gradient(left, transparent 0%, #A878AF 30%, #C99BCF 50%, #A878AF 70%, transparent 100%);
+	background:  -moz-linear-gradient(left, transparent 0%, #A878AF 30%, #C99BCF 50%, #A878AF 70%, transparent 100%);
+	background:  -webkit-linear-gradient(left, transparent 0%, #A878AF 30%, #C99BCF 50%, #A878AF 70%, transparent 100%);
+	background:  -o-linear-gradient(left, transparent 0%, #A878AF 30%, #C99BCF 50%, #A878AF 70%, transparent 100%);
+	background:  -ms-linear-gradient(left, transparent 0%, #A878AF 30%, #C99BCF 50%, #A878AF 70%, transparent 100%);
+	background: -webkit-gradient(/* old webkit */
+linear, left bottom, right bottom, color-stop(0%, transparent), color-stop(40%, #A878AF), color-stop(50%, #C99BCF), color-stop(60%, #A878AF), color-stop(100%, transparent));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-magenta-two:hover{
+	/* background and gradient */
+background: #68306F;
+	background:  radial-gradient( 50% -10%, ellipse, #A878AF 0%, #68306F 70%, #66226F 100%);
+	background:  -moz-radial-gradient( 50% -10%, ellipse, #A878AF 0%, #68306F 70%, #66226F 100%);
+	background:  -webkit-radial-gradient( 50% -10%, ellipse, #A878AF 0%, #68306F 70%, #66226F 100%);
+	background:  -o-radial-gradient( 50% -10%, ellipse, #A878AF 0%, #68306F 70%, #66226F 100%);
+	background:  -ms-radial-gradient( 50% -10%, ellipse, #A878AF 0%, #68306F 70%, #66226F 100%);
+	background-image:  -webkit-gradient(radial, 50% -10%, 0, 90 90, 360, color-stop(0, #A878AF), color-stop(20%, #68306F), color-stop(100%, #66226F));
+	/* End background and gradient */
+
+	}
+
+.neo-download-two-magenta-two:focus,
+.neo-download-two-magenta-two:active{
+	/* text shadow */
+text-shadow:  -1px -1px 0 #38043F;
+	-moz-text-shadow:  -1px -1px 0 #38043F;
+	-webkit-text-shadow:  -1px -1px 0 #38043F;
+	-ms-text-shadow:  -1px -1px 0 #38043F;
+	/* End text shadow */
+/* box shadow */
+box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #38043F, 0 3px 2px #56125F, 0 3px 6px #56125F;
+	-moz-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #38043F, 0 3px 2px #56125F, 0 3px 6px #56125F;
+	-webkit-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #38043F, 0 3px 2px #56125F, 0 3px 6px #56125F;
+	-ms-box-shadow: 0 -1px 1px rgba(86, 18, 95, 0.4), /* #56125F and opacity 40% */
+0 1px 0 #56125F, 0 2px 0 #56125F, 0 3px 0 #38043F, 0 3px 2px #56125F, 0 3px 6px #56125F;
+	/* End box shadow */
+
+	}
+
+/* End Set Color */
